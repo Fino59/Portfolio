@@ -1,26 +1,70 @@
-body {
-  background-image: url("https://i.imgur.com/FyBFQw6.jpg");
-  font-family: Arial;
-  backdrop-filter: blur(1px);
-  height: 100vh;
+/*Sof Reset do CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  background-image: url("https://i.imgur.com/FyBFQw6.jpg");
+  background-size: auto auto;
+  font-family: Arial;
+  font-size: 10px;
+  height: 100vh; /*Importante para manter o background por toda a tela*/
+}
 
+/*Caso a tela tenha pelo menos 400px vai carregar esse estilo*/
+@media (min-width: 400px) {
+  body {
+    font-size: 12px;
+  }
+}
 
-.menu li {
-  list-style: none;
-  margin-top: -5px;
-  margin-left: -10px;
+/*Caso a tela tenha pelo menos 600px vai carregar esse estilo*/
+@media (min-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/*Caso a tela tenha pelo menos 800px vai carregar esse estilo*/
+@media (min-width: 800px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  background-color: RGBa(220, 220, 220, 0.1);
+  position: fixed;
+  width: 100vw;
+  top: 0;
 }
 
 .menu ul {
   display: flex;
   justify-content: space-around;
+  }
+
+/*Remove marcações do menu*/
+.menu li {
+    list-style: none;
 }
 
+.menu a {
+  display: block;
+  padding: 10px 20px;
+}
 
 a:link, a:visited {
-    color: #FF00FF  ;
+    color: rgb(255, 200, 255);;
     text-align: center;
     text-decoration: none;
     font-size:150%;
@@ -35,15 +79,7 @@ a:hover {
   color: whitesmoke;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 40px;
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 80%;
-  padding: 20px;
-  text-align: center;
+  font-size: 3em;
   text-shadow: 0px -5px 5px #FF00FF; 
 }
 
@@ -51,19 +87,38 @@ a:hover {
   color: #FF00FF;
   text-align: center;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 35px;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 80%;
-  padding: 20px;
-  text-align: center;
-  text-shadow: 2px 0px 5px #AFEEEE;
+  font-size: 2em;
+  text-shadow: 2px 0px 5px black;
 }
 
-.text {
-  color: #00CED1;
+.img-portfolio {
+  height: 80px;
+  width: 80px;
+  
+}
+
+.portfolio-subtitle {
+  color: rgb(255, 200, 255);
+  display: block;
+  padding: 3em;
+  text-align: center;
+  }
+
+.portfolio{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.itens {
+display: flex;
+flex-direction: row;
+justify-content:space-around;
+align-items:flex-end;
+padding-bottom: 3em;
+}
+
+figcaption {
+  color: rgb(255, 200, 255);
   text-align: center;
 }
+
