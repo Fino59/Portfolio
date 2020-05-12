@@ -1,20 +1,11 @@
 body {
-  background-image: url("https://i.imgur.com/BOvWmI7.jpg");
-  background-size: 100vw auto;
+  background-image: url("https://image4.uhdpaper.com/wallpaper-hd/abstract-digital-art-uhdpaper.com-hd-4.295.jpg");
   font-family: Arial;
+  backdrop-filter: blur(1px);
+  height: 100vh;
 }
 
-.menu {
-  background-color: black;
-  border: 4px solid #48D1CC;
-  border-radius: 25px;
-  box-shadow: 0px 0px 20px 10px #48D1CC;
-  height: 50px;
-  width: 1000px;
-  margin-top: 20px;
-  margin-left: 420px;
-  margin-bottom: 70px;
-}
+
 
 .menu li {
   list-style: none;
@@ -29,7 +20,7 @@ body {
 
 
 a:link, a:visited {
-    color: #48D1CC;
+    color: #FF00FF  ;
     text-align: center;
     text-decoration: none;
     font-size:150%;
@@ -40,14 +31,39 @@ a:hover {
   color: #1E90FF;
 }
 
-.site-title, 
+.site-title {
+  color: whitesmoke;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  text-shadow: 0px -5px 5px #FF00FF; 
+}
+
 .site-subtitle {
+  color: #FF00FF;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 35px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  text-shadow: 2px 0px 5px #AFEEEE;
+}
+
+.text {
   color: #00CED1;
   text-align: center;
 }
-
-.site-subtitle {
-  font-style: italic;
-}
-
-  
