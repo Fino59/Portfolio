@@ -37,7 +37,7 @@ body {
 header {
   height: 100vh;
   display: flex;
-  font-family: 'Play', sans-serif;;
+  font-family: 'Play', sans-serif;
   justify-content: center;
   align-items: center;
 }
@@ -62,6 +62,13 @@ header {
 .menu a {
   display: block;
   padding: 10px 20px;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.menu a:hover {
+  text-decoration: none;
+  background-color: #DAA520;
+  color: whitesmoke;
 }
 
 a:link, a:visited {
@@ -69,11 +76,6 @@ a:link, a:visited {
     text-align: center;
     text-decoration: none;
     font-size:150%;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: #1E90FF;
 }
 
 .site-title {
@@ -85,7 +87,7 @@ a:hover {
 }
 
 .site-subtitle {
-  color: rgb(160, 136, 0);
+  color: #DAA520;
   text-align: center;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 2em;
@@ -95,6 +97,12 @@ a:hover {
 .img-portfolio {
   height: 80px;
   width: 80px;
+  border-radius: 25%;
+}
+
+.portfolio {
+  padding: 2em;
+  height: 100vh;
 }
 
 .portfolio-subtitle {
@@ -108,12 +116,14 @@ a:hover {
   text-align: center;
   display: grid;
   gap: 1em;
-}
+  border-bottom: 0em;
+}  
 
 figcaption {
   color: #DAA520;  
 }
 
+/*Para manter funcional a area de links*/
 @media (min-width: 600px) {
   .portfolio .grid {
     color: #DAA520;
@@ -122,6 +132,20 @@ figcaption {
     gap: 1em;
     text-align: center;
     grid-template-columns: 250px 250px;
-    justify-content: ;
+    justify-content: center;
   }
 }
+
+/*Para manter funcional a area de links*/
+@media (min-width: 1000px) {
+  .portfolio .grid {
+    color: #DAA520;
+    font-family: 'Play', sans-serif;
+    display: grid;
+    gap: 1em;
+    text-align: center;
+    grid-template-columns: 250px 250px 250px 250px;
+    justify-content: center;
+  }
+}
+

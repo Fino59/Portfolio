@@ -7,8 +7,8 @@
   
   body {
     background-image: url("https://i.imgur.com/2VTfDeY.jpg");
-    background-size: auto auto;
-    font-family: 'Play', sans-serif;
+    background-size: auto 70vw;
+    font-family: Arial;
     font-size: 10px;
     height: 100vh; /*Importante para manter o background por toda a tela*/
   }
@@ -35,8 +35,9 @@
   }
   
   header {
-    height: 100vh;
+    height: 40vh;
     display: flex;
+    font-family: 'Play', sans-serif;
     justify-content: center;
     align-items: center;
   }
@@ -64,30 +65,30 @@
     transition: background-color 0.5s, color 0.5s;
   }
   
+  .menu a:hover {
+    text-decoration: none;
+    background-color: #DAA520;
+    color: whitesmoke;
+  }
+  
   a:link, a:visited {
       color: #DAA520;
       text-align: center;
       text-decoration: none;
       font-size:150%;
   }
-  
-  a:hover {
-    text-decoration: none;
-    background-color: #DAA520;
-    color: whitesmoke;
-  }
-  
-  .text {
-    background-color: rgba(202, 191, 29, 0.1);
-    color: whitesmoke;
-    text-align: justify;
-    font-family: 'Play', sans-serif;
-    font-size: 1.3em;
-    position: relative;
-    width: 55vw;
 
-  }
-  
-  
-  
-  
+  .site-title {
+    color: #DAA520;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2em;
+    text-shadow: 0px 5px 5px rgb(160, 136, 0);    
+     }   
+
+.text {
+  color: #DAA520;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1em;
+}
