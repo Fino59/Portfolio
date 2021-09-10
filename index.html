@@ -1,18 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Danilo Fontes</title>
-  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="./css/estilos.css">
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Bebas+Neue&family=Play:wght@700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/3fbdd2cc55.js" crossorigin="anonymous"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
 </head>
 <body>
+
   <header>
     <nav class="menu">
       <ul>
-        <li><a href="./sobre.html">Sobre</a></li>
+        <li><a href="#"><i class="fas fa-home"></i></a></li>
+        <li><a href="./pages/sobre.html">Sobre</a></li>
         <li><a href="#pessoal">Pessoal</a></li>
         <li><a href=#contato>Contato</a></li>
       </ul>
@@ -21,49 +28,50 @@
       <h1 class="site-title"> Danilo Fontes</h1>
       <h2 class="site-subtitle"> Front-End Developer</h2>
     </div>
+    <div class="scrolld">
+      <p class="animate__animated animate__shakeY animate__slower"><i class="fas fa-angle-double-down"></i></p>
+    </div>
   </header>
+
   <section id="pessoal" class="portfolio">
     <h2 class="portfolio-subtitle">Pessoal</h2>
     <div class="grid">
       <figure>
-        <img class="img-portfolio" src="./img/ecommerce.png" alt="Last.FM">
-        <figcaption>Last.FM</figcaption> <!-- Inserir link para perfil Last.FM -->
+        <a href="https://www.last.fm/pt/user/Fino13" target="_blank"><img class="img-portfolio" src="./assets/imgs/lastFM.png" alt="Last.FM"></a>
+        <figcaption>Music</figcaption> 
       </figure>
       <figure>
-        <img class="img-portfolio" src="./img/mobile.png" alt="Steam">
+        <a href="https://steamcommunity.com/id/slipdan" target="_blank"><img class="img-portfolio" src="./assets/imgs/steam.png" alt="Steam"></a>
         <figcaption>Steam</figcaption>
       </figure>
       <figure>
-        <img class="img-portfolio" src="./img/webdesign.png" alt="Musica">
-        <figcaption>Música</figcaption>
+        <a href="https://www.tvtime.com/en/user/2038065/profile" target="_blank"><img class="img-portfolio" src="./assets/imgs/TvTime.svg" alt="Tv Time"></a>
+        <figcaption>Filmes/Séries</figcaption>
       </figure>
       <figure>
-        <a href="https://www.tvtime.com/en/user/2038065/profile" target="_blank"><img class="img-portfolio" src="./img/TvTime.svg" alt="Tv Time"></a>
-        <figcaption>Tv Time</figcaption>
+        <a href="./pages/projetos.html"><img class="img-portfolio" src="./assets/imgs/ClaveF.svg" alt="Projetos"></a>
+        <figcaption>Projetos</figcaption>  
       </figure>
     </div>
   </section>
-  <br><br>
+  
   <section id="contato" class="portfolio">
     <h2 class="portfolio-subtitle">Contatos</h2>
     <div class="grid">
-      <figure>
-        <img class="img-portfolio" src="./img/ecommerce.png" alt="Facebook">
-        <figcaption>Facebook</figcaption> <!-- Inserir link para facebook -->
+      <figure class="icon">
+        <a href="https://www.facebook.com/daniloalvim.santosfontes/" target="_blank"><i class="fab fa-facebook-square"></i></a>
       </figure>
-      <figure>
-        <img class="img-portfolio" src="./img/mobile.png" alt="Discord">
-        <figcaption>Discord</figcaption>
+      <figure class="icon">
+        <a href="https://github.com/Fino59" target="_blank"><i class="fab fa-github-square"></i></a>
       </figure>
-      <figure>
-        <img class="img-portfolio" src="./img/webdesign.png" alt="Twitter">
-        <figcaption>Twitter</figcaption>
+      <figure class="icon">
+        <a href="https://twitter.com/Danilo59Fontes" target="_blank"><i class="fab fa-twitter-square"></i></a>
       </figure>
-      <figure>
-        <img class="img-portfolio" src="./img/pessoais.png" alt="LinkedIn">
-        <figcaption>LinkedIn</figcaption>
+      <figure class="icon">
+        <a href="" target=""><i class="fab fa-linkedin"></i></a>
       </figure>
     </div>
-  </section>
+  </section> 
+
 </body>
 </html>
