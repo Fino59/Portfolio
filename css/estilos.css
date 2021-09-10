@@ -6,28 +6,25 @@
 }
 
 body {
-  background-image: url("https://i.imgur.com/2VTfDeY.jpg");
-  background-size: auto 70vw;
+  background-image: url("../assets/imgs/background.jpg");
+  background-size: cover;
   font-family: Arial;
   font-size: 10px;
-  height: 100vh; /*Importante para manter o background por toda a tela*/
+  height: 80vh; 
 }
 
-/*Caso a tela tenha pelo menos 400px vai carregar esse estilo*/
 @media (min-width: 400px) {
   body {
     font-size: 12px;
   }
 }
 
-/*Caso a tela tenha pelo menos 600px vai carregar esse estilo*/
 @media (min-width: 600px) {
   body {
     font-size: 16px;
   }
 }
 
-/*Caso a tela tenha pelo menos 800px vai carregar esse estilo*/
 @media (min-width: 800px) {
   body {
     font-size: 20px;
@@ -43,7 +40,7 @@ header {
 }
 
 .menu {
-  background-color: RGBa(220, 220, 220, 0.1);
+  background-color: rgba(0, 0, 0, 0.411);
   position: fixed;
   width: 100vw;
   top: 0;
@@ -91,18 +88,22 @@ a:link, a:visited {
   text-align: center;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 2em;
-  
 }
 
 .img-portfolio {
   height: 80px;
   width: 80px;
-  border-radius: 25%;
+  transition: 0.3s ease-in-out;
+}
+
+.img-portfolio:hover {
+  height: 95px;
+  width: 95px;
 }
 
 .portfolio {
   padding: 2em;
-  height: 100vh;
+  height: 80vh;
 }
 
 .portfolio-subtitle {
@@ -115,15 +116,35 @@ a:link, a:visited {
 .portfolio .grid {
   text-align: center;
   display: grid;
-  gap: 1em;
+  gap: 1.5em;
   border-bottom: 0em;
 }  
 
-figcaption {
-  color: #DAA520;  
+.icon {
+  font-size: 3em;
 }
 
-/*Para manter funcional a area de links*/
+.fa-facebook-square:hover {
+  /*text-shadow: 1px 3px 2px  #596aad;*/
+  color: #4267B2;
+  transition: 0.3s ease-in-out;
+}
+
+.fa-github-square:hover{
+  color: #ffffff;
+  transition: 0.3s ease-in-out;
+}
+
+.fa-twitter-square:hover {
+  color: #1DA1F2;
+  transition: 0.3s ease-in-out;
+}
+
+.fa-linkedin:hover{
+  color: #2867B2;
+  transition: 0.3s ease-in-out;
+}
+
 @media (min-width: 600px) {
   .portfolio .grid {
     color: #DAA520;
@@ -131,12 +152,11 @@ figcaption {
     display: grid;
     gap: 1em;
     text-align: center;
-    grid-template-columns: 250px 250px;
+    grid-template-columns: 200px 200px;
     justify-content: center;
   }
 }
 
-/*Para manter funcional a area de links*/
 @media (min-width: 1000px) {
   .portfolio .grid {
     color: #DAA520;
@@ -149,3 +169,10 @@ figcaption {
   }
 }
 
+.scrolld {
+  position:fixed;
+  bottom:40px;
+  right:20px;
+  color: #DAA520;
+  font-size: 2em;
+}
