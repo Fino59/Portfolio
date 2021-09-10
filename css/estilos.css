@@ -120,6 +120,11 @@ a:link, a:visited {
   border-bottom: 0em;
 }  
 
+.portfolio .flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .icon {
   font-size: 3em;
 }
