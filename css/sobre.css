@@ -57,7 +57,7 @@
   .menu a {
     display: block;
     padding: 10px 20px;
-    transition: background-color 0.5s, color 0.5s;
+    transition: text-shadow 0.5s, color 0.5s;
   }
   
   a:link, a:visited {
@@ -69,7 +69,7 @@
   
   a:hover {
     text-decoration: none;
-    background-color: #DAA520;
+    text-shadow: 3px 3px 5px #DAA520;
     color: whitesmoke;
   }
   
