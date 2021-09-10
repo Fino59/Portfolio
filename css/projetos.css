@@ -6,28 +6,25 @@
   }
   
   body {
-    background-image: url("https://i.imgur.com/2VTfDeY.jpg");
+    background-image: url("../assets/imgs/background.jpg");
     background-size: auto 70vw;
     font-family: Arial;
     font-size: 10px;
-    height: 100vh; /*Importante para manter o background por toda a tela*/
+    height: 80vh;
   }
   
-  /*Caso a tela tenha pelo menos 400px vai carregar esse estilo*/
   @media (min-width: 400px) {
     body {
       font-size: 12px;
     }
   }
   
-  /*Caso a tela tenha pelo menos 600px vai carregar esse estilo*/
   @media (min-width: 600px) {
     body {
       font-size: 16px;
     }
   }
   
-  /*Caso a tela tenha pelo menos 800px vai carregar esse estilo*/
   @media (min-width: 800px) {
     body {
       font-size: 20px;
@@ -35,7 +32,7 @@
   }
   
   header {
-    height: 40vh;
+    height: 30vh;
     display: flex;
     font-family: 'Play', sans-serif;
     justify-content: center;
@@ -43,7 +40,7 @@
   }
   
   .menu {
-    background-color: RGBa(220, 220, 220, 0.1);
+    background-color: rgba(0, 0, 0, 0.411);
     position: fixed;
     width: 100vw;
     top: 0;
@@ -54,7 +51,6 @@
     justify-content: space-around;
     }
   
-  /*Remove marcações do menu*/
   .menu li {
       list-style: none;
   }
@@ -80,15 +76,20 @@
 
   .site-title {
     color: #DAA520;
-    text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Play', sans-serif;
     font-size: 2em;
-    text-shadow: 0px 5px 5px rgb(160, 136, 0);    
-     }   
+    } 
+    
+  .text {
+     background-color: rgba(0, 0, 0, 0.411);
+     color: #DAA520;
+     text-align: left;
+     font-family: 'Play', sans-serif;
+     font-size: 1.3em;
+     position: relative;
+     width: 55vw;
+     margin-left: auto;
+     margin-right: auto;
+  }
 
-.text {
-  color: #DAA520;
-  text-align: center;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 1em;
-}
+  
