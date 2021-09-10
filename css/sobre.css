@@ -6,28 +6,25 @@
   }
   
   body {
-    background-image: url("https://i.imgur.com/2VTfDeY.jpg");
+    background-image: url("../assets/imgs/background.jpg");
     background-size: auto auto;
     font-family: 'Play', sans-serif;
     font-size: 10px;
-    height: 100vh; /*Importante para manter o background por toda a tela*/
+    height: 100vh;
   }
   
-  /*Caso a tela tenha pelo menos 400px vai carregar esse estilo*/
   @media (min-width: 400px) {
     body {
       font-size: 12px;
     }
   }
   
-  /*Caso a tela tenha pelo menos 600px vai carregar esse estilo*/
   @media (min-width: 600px) {
     body {
       font-size: 16px;
     }
   }
   
-  /*Caso a tela tenha pelo menos 800px vai carregar esse estilo*/
   @media (min-width: 800px) {
     body {
       font-size: 20px;
@@ -42,7 +39,7 @@
   }
   
   .menu {
-    background-color: RGBa(220, 220, 220, 0.1);
+    background-color: rgba(0, 0, 0, 0.411);
     position: fixed;
     width: 100vw;
     top: 0;
@@ -51,9 +48,8 @@
   .menu ul {
     display: flex;
     justify-content: space-around;
-    }
-  
-  /*Remove marcações do menu*/
+  }
+    
   .menu li {
       list-style: none;
   }
@@ -78,15 +74,23 @@
   }
   
   .text {
-    background-color: rgba(202, 191, 29, 0.1);
-    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.411);
+    color: #DAA520;
     text-align: justify;
     font-family: 'Play', sans-serif;
     font-size: 1.3em;
     position: relative;
     width: 55vw;
-
   }
+
+  a.alura{
+    color: whitesmoke;
+    text-align: justify;
+    font-family: 'Play', sans-serif;
+    font-size: 1.1em;
+    transition: background-color 0.5s, color 0.5s;
+  }
+
   
   
   
