@@ -46,10 +46,16 @@ header {
   top: 0;
 }
 
+@media (max-width: 400px) {
+  .menu {
+    font-size: 0.5rem;
+  }
+}
+
 .menu ul {
   display: flex;
   justify-content: space-around;
-  }
+}
 
 /*Remove marcações do menu*/
 .menu li {
@@ -69,10 +75,10 @@ header {
 }
 
 a:link, a:visited {
-    color: #DAA520;
-    text-align: center;
-    text-decoration: none;
-    font-size:150%;
+  color: #DAA520;
+  text-align: center;
+  text-decoration: none;
+  font-size:150%;
 }
 
 .site-title {
@@ -126,13 +132,13 @@ a:link, a:visited {
 }
 
 .icon {
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 .fa-facebook-square:hover {
   /*text-shadow: 1px 3px 2px  #596aad;*/
   color: #4267B2;
-  transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;  
 }
 
 .fa-github-square:hover{
